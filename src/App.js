@@ -11,6 +11,7 @@ function App() {
   const [data, setData] = useState({})
   
 
+// API URL: https://api.openweathermap.org/data/2.5/weather?q=delhi&appid=f56f24967aaf51182d1d4df628297c6d
 
   const getWetherDetails = (cityName) => {
     if (!cityName) return
