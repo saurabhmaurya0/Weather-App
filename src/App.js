@@ -17,7 +17,9 @@ function App() {
     if (!cityName) return
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey
     axios.get(apiURL).then((res) => {
-      console.log("response", res.data)
+
+      // console.log("response", res.data)
+
       setData(res.data)
     }).catch((err) => {
       console.log("err", err)
@@ -25,7 +27,9 @@ function App() {
   }
 
   const handleChangeInput = (e) => {
-    console.log("value", e.target.value)
+
+    // console.log("value", e.target.value)
+    
     setInputCity(e.target.value)
   }
 
